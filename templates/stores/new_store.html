@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<header>
+    <h1>Create Stores</h1>
+</header>
+
+<section class="create-store-form">
+    <form method="post">
+
+        <!-- Store Name form -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="JD, Amazon ...">
+        </div>
+
+
+        <!-- URL Prefix form -->
+        <div class="form-group">
+            <label for="url_prefix">URL Prefix</label>
+            <input type="text" class="form-control" id="url_prefix" name="url_prefix" placeholder="https://wwww.amazon.com/">
+        </div>
+
+
+        <!-- Tag Name form -->
+        <div class="form-group">
+            <label for="tag_name">HTML Tag Name</label>
+            <input type="text" class="form-control" id="tag_name" placeholder="p" name="tag_name" aria-describedby="tagNameHelp">
+
+            <!-- Help Block -->
+            <small id="tagNameHelp" class="form-text text-muted">
+                Which HTML tag contains the price information for items in this store?
+            </small>
+        </div>
+
+
+        <!-- Query form -->
+        <div class="form-group">
+            <label for="query">HTML Query</label>
+            <input type="text" class="form-control" id="query" placeholder="{ 'class' : 'price price--large' }" name="query" aria-describedby="queryHelp">
+
+            <!-- Help Block -->
+            <small id="queryHelp" class="form-text text-muted">
+                Which attributes are on the element that contains the price? This is so we can find it on the page.
+            </small>
+        </div>
+
+
+
+        <!-- submit button -->
+        <button type="submit" class="btn btn-primary">Create Store</button>
+
+
+    </form>
+</section>
+
+{% endblock %}
+
+

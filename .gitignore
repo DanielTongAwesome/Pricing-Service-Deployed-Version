@@ -1,0 +1,20 @@
+
+# ignore file list
+# -- Mac is using '/'
+.idea/
+
+
+# -- Windows is using '\'
+.idea\
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+__pycache__\
+
+# OS generated files
+.DS_Store
+.DS_Store?
+*.DS_Store
+*.DS_Store?
+.env
