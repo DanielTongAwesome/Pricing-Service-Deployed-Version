@@ -7,7 +7,7 @@
 
 
 from flask import Blueprint, render_template, request, url_for, redirect, session
-from Pricing_Service.models.user import User, UserError
+from models.user import User, UserError
 
 user_blueprint = Blueprint('users', __name__)
 

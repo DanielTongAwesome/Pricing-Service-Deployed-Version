@@ -5,7 +5,7 @@
     email: danieltongubc@gmail.com 
 '''
 
-from Pricing_Service.models.alert import Alert
+from models.alert import Alert
 
 alerts = Alert.all()
 

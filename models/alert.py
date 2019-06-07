@@ -9,9 +9,9 @@
 import uuid
 from typing import Dict
 from dataclasses import dataclass, field
-from Pricing_Service.models.item import Item
-from Pricing_Service.models.model import Model
-from Pricing_Service.models.user.user import User
+from models.item import Item
+from models.model import Model
+from models.user.user import User
 
 
 @dataclass(eq=False)    # no need to compare two alerts

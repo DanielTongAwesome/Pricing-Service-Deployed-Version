@@ -8,8 +8,8 @@
 import json
 from typing import Dict
 from flask import Blueprint, render_template, request, url_for, redirect
-from Pricing_Service.models.store import Store
-from Pricing_Service.models.user.decorators import requires_admin, requires_login
+from models.store import Store
+from models.user.decorators import requires_admin, requires_login
 
 store_blueprint = Blueprint('stores', __name__)
 

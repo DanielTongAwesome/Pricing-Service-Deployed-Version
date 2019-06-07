@@ -6,10 +6,10 @@
 '''
 
 from flask import request, render_template, Blueprint, redirect, url_for, session
-from Pricing_Service.models.alert import Alert
-from Pricing_Service.models.item import Item
-from Pricing_Service.models.store import Store
-from Pricing_Service.models.user import requires_login
+from models.alert import Alert
+from models.item import Item
+from models.store import Store
+from models.user import requires_login
 
 alert_blueprint = Blueprint('alerts', __name__)
 

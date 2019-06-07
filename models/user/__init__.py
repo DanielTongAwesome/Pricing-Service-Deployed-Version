@@ -5,6 +5,6 @@
     email: danieltongubc@gmail.com 
 '''
 
-from Pricing_Service.models.user.user import User
-from Pricing_Service.models.user.errors import UserError
-from Pricing_Service.models.user.decorators import requires_login
+from models.user.user import User
+from models.user.errors import UserError
+from models.user.decorators import requires_login

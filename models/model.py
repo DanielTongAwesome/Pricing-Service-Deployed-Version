@@ -7,7 +7,7 @@
 
 from typing import List, Dict, TypeVar, Type
 from abc import ABCMeta, abstractmethod
-from Pricing_Service.common.database import Database
+from common.database import Database
 
 T = TypeVar('T', bound='Model')
 

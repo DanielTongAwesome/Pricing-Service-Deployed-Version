@@ -8,9 +8,9 @@
 import uuid
 from typing import Dict
 from dataclasses import dataclass, field
-from Pricing_Service.models.model import Model
-from Pricing_Service.common.utils import Utils
-import Pricing_Service.models.user.errors as UserErrors
+from models.model import Model
+from common.utils import Utils
+import models.user.errors as UserErrors
 
 
 @dataclass

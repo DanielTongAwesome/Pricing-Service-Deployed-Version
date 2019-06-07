@@ -7,9 +7,9 @@
 
 import os
 from flask import Flask, render_template
-from Pricing_Service.views.alerts import alert_blueprint
-from Pricing_Service.views.stores import store_blueprint
-from Pricing_Service.views.users import user_blueprint
+from views.alerts import alert_blueprint
+from views.stores import store_blueprint
+from views.users import user_blueprint
 
 app = Flask(__name__)
 app.secret_key = os.urandom(64)  # randomly generate 64 characters to protect the session
